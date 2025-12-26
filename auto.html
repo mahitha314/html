@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+
+        }
+        .auto-fill{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,100px));
+            gap:10px;
+            background-color: aqua;
+            height: 200px;
+        }
+        .auto-fill > div{
+            background-color: brown;
+            color: white;
+            padding:2opx;
+
+        }
+ .auto-fit{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(50px,10px));
+            grid-gap:50px;
+            background-color:   rgb(27, 32, 32);
+        }
+        .auto-fit>div{
+            background-color: rgb(214, 23, 87);
+            color: white;
+            padding:2opx;
+
+        }
+        </style>
+</head>
+<body>
+    <div class="auto-fill">
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <div class="auto-fit">
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>
